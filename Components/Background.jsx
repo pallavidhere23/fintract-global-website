@@ -1,31 +1,26 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "swiper/swiper-bundle.css";
+import "swiper/css/bundle";
 import styles from "../styles/Background.module.css";
 
+import { Pagination } from "swiper";
 
-
-
- function Background() {
+function Background() {
   return (
     <>
-      <Swiper className ={styles.swiper}
-        cssMode={true}
+      <Swiper
+        className={styles.swiper}
         direction={"vertical"}
-        navigation={true}
         pagination={{
-          clickable: true
+          clickable: true,
         }}
-        loop={true}
-        modules={[Pagination, Navigation]}
-       
-     >
+        modules={[Pagination]}
+      >
         <SwiperSlide className={styles.swiperslide}>
           <img
             src="https://fintractwebsite.s3.ap-south-1.amazonaws.com/mainpagebg.png"
@@ -49,7 +44,7 @@ import styles from "../styles/Background.module.css";
             src="https://fintractwebsite.s3.ap-south-1.amazonaws.com/mainpagebg.png"
             alt=""
           />
-        </SwiperSlide >
+        </SwiperSlide>
         <SwiperSlide className={styles.swiperslide}>
           <img
             src="https://fintractwebsite.s3.ap-south-1.amazonaws.com/mainpagebg.png"
