@@ -30,7 +30,9 @@ const Navbar = () => {
             <Menu>
                <MenuButton>Our Products <ChevronDownIcon/></MenuButton>
                   <Portal>
-                  <MenuList>
+                  <MenuList 
+                   zIndex={99999999}
+                   >
                      <MenuItem>Careers</MenuItem>
                      <MenuItem>Legal Consultancy</MenuItem>
                      <MenuItem>Articles</MenuItem>
@@ -44,7 +46,9 @@ const Navbar = () => {
             <Menu>
                <MenuButton>More <ChevronDownIcon/></MenuButton>
                   <Portal>
-                  <MenuList>
+                  <MenuList 
+                  zIndex={999}
+                   >
                      <MenuItem>Careers</MenuItem>
                      <MenuItem>Legal Consultancy</MenuItem>
                      <MenuItem>Articles</MenuItem>
