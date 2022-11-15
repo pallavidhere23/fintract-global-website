@@ -1,7 +1,6 @@
 .swiper {
   width: 100%;
   height: 86.8vh;
-  
 }
 
 .swiperslide {
@@ -23,7 +22,6 @@
   -webkit-align-items: center;
   align-items: center;
 }
-
 
 .swiper .swiper-button-next {
   background-image: url("https://fintractwebsite.s3.ap-south-1.amazonaws.com/Down+Arrow.svg");
